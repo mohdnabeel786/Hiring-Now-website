@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    cursor: pointer;
+    background-color: rgb(77, 77, 77);
+}
+
+.rightNav {
+    display: flex;
+}
+
+.logo img {
+    width: 30%;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    border-radius: 2px;
+    transition: 0.3s;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.nav-list a.active{
+    background-color: white;
+    color: rgb(48, 3, 85);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#search {
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.nav-list a:hover {
+    background-color: white;
+    color: rgb(48, 3, 85);
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7)url('../img/img1.png');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 0px 40px;
+}
+
+#serach {
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 215px;
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+.firstHlef {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-big {
+    font-size: 50px;
+    margin-bottom: 14px;
+}
+
+.text-small {
+    font-size: 21px;
+    margin-bottom: 28px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    transition: 0.3s;
+    background: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttons a:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(66, 7, 122);
+    border-radius: 5px;
+
+}
+
+.btn-sm {
+    color: white;
+    border: 1px solid white;
+    background: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 0px 2px;
+    margin: 0px 2px;
+}
+
+.btn-sm:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(66, 7, 122);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.secSection {
+    text-align: center;
+}
+
+.heding {
+    font-size: 30px;
+    padding: 30px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.endSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    padding: 40px 20px;
+
+}
+
+.location p,
+.technology p,
+.companies p,
+.popular p {
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.location a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px 0px;
+}
+
+.location a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.thirdSection {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.fLeft {
+    padding-left: 50px;
+}
+
+.fLeft li {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.fLeft p {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.fLeft a {
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    margin-top: 20px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+.fLeft a:hover {
+    background-color: rgb(112, 2, 202);
+    color: white;
+}
+
+.fourSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.fourSection .fRight {
+    padding-left: 10px;
+}
+
+.fiveSection{
+    background-color: rgb(66, 7, 122);
+    color: white;
+}
+
+.had{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+.mySlides p{
+    padding: 0px 50px;
+}
+
+h3{
+    padding: 10px 50px;
+}
+
+.hadeName {
+    color: #c2c2c2;
+    margin: 10px 0px;
+}
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.text-footer {
+    text-align: center;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(87, 87, 87);
+}

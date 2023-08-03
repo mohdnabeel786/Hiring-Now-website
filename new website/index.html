@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hiring Now</title>
+</head>
+
+<body>
+    <div class="background">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <div class="logo"><img src="img/img.png" alt="img.png"></div>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#login">Login</a></li>
+
+                <div class="rightNav">
+                    <input type="text" name="search" id="search" placeholder="eg.web developer">
+                    <button class="btn btn-sm">Search Job</button>
+                </div>
+            </ul>
+        </nav>
+
+        <section class="firstSection">
+            <div class="main-box">
+                <div class="firstHelf">
+                    <p class="text-big">Find your next top tech job in 1 week.</p>
+                    <p class="text-small">Are you a top 2% Software Engineer, Product Manager or Data Scientist?<br>
+                        Let leading Indian technology companies compete to hire you.</p>
+                    <div class="buttons">
+                        <a href="#signup">Sign Up</a>
+                        <a href="#login">Login</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="secSection">
+        <p class="heding">
+            LEADING COMPANIES BUILD TEAMS ON TOPHIRE
+        </p>
+        <div class="imgs"><img src="/img/Screenshot (10).png" alt="img3"></div>
+    </section>
+
+    <section class="thirdSection">
+        <div class="fLeft">
+            <p>Why job seekers love us</p>
+            <li>Unique jobs at startups and tech companies you can't find anywhere else</li>
+            <li>Say goodbye to cover letters - your profile is all you need. One click to apply and you're done.</li>
+            <li>Everything you need to know to job search - including seeing salary and stock options upfront when
+                looking</li>
+            <li>Connect directly with founders at top startups - no third party recruiters allowed</li>
+            <a href="leranMore">Leran More</a>
+        </div>
+        <div class="fRight">
+            <img src="/img/img2.png" alt="img4">
+        </div>
+    </section>
+
+    <section class="fourSection">
+        <div class="fLeft">
+            <p>Why recruiters love us</p>
+            <li>8 million responsive and startup-ready candidates, with all the information you need to vet them</li>
+            <li>Everything you need to kickstart your recruiting - get job posts, company branding, and HR tools set up
+            </li>
+            <li>A free applicant tracking system, or free integration with any ATS you may already use</li>
+            <li>Plus, we can do the vetting for you! With Curated, we review the world's top tech talent.</li>
+            <a href="leranMore">Leran More</a>
+        </div>
+        <div class="fRight">
+            <img src="/img/img5.png" alt="img4">
+        </div>
+    </section>
+
+    <section class="fiveSection">
+        <p class="had">Successes of our users</p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <h3>Hitash Gupta</h3>
+                <p class="hadeName">Hiring at Rolling Arrays</p>
+                <p>We at Rolling Arrays like the audio screening questions features the most, it helps filter out
+                    relevant candidates. Also, the Job pipeline is seamless, the UI is great and very attractive. The
+                    automations are very helpful since it now saves a lot of time which went in sharing status updates
+                    by calling/emailing candidates manually.</p>
+            </div>
+
+            <div class="mySlides fade">
+                <h3>Mina Kumari</h3>
+                <p class="hadeName">Hiring at Wingman</p>
+                <p>
+                    We've using Cutshort for over a year now and it has been the single largest source of our tech
+                    talent by some margin! In addition, the software tooling they've built allows for a tremendous
+                    amount of automation and filtering. The built in tooling for screening automation is fantastic. As a
+                    founder initially doing the talent sourcing myself, it was immensely valuable. Now, our talent
+                    acquisition team loves it too. They also have very good customer service and fantastic onboarding.
+                </p>
+            </div>
+
+            <div class="mySlides fade">
+                <h3>Surash Jha</h3>
+                <p class="hadeName">Hiring at Clover</p>
+                <p>Hiringnow.com is easy to use and has an inbuilt Al tool which only gets me what I am looking for. The
+                    team and the platform also help me connect directly with talent through various initiatives! I
+                    literally take a 'cutshort' to finding great talent!</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </section>
+
+    <section class="endSection">
+        <div class="location">
+            <p class="jobLocation">Jobs by location</p>
+            <a href="#Indai">Startup Jobs in India</a>
+            <a href="#Bangalore">Startup Jobs in Bangalore</a>
+            <a href="#NCR">Startup Jobs in Delhi / Gurgaon / Noida</a>
+            <a href="#Pune">Startup Jobs in Pune</a>
+            <a href="#Hyderabad">Startup Jobs in Hyderabad</a>
+        </div>
+
+        <div class="location">
+            <p class="technology">Technology Jobs</p>
+            <a href="#android">Android Developer Jobs</a>
+            <a href="#iOS">iOS Development Jobs</a>
+            <a href="#frontend">Frontend Developer Jobs</a>
+            <a href="#backend">Backend Developer Jobs</a>
+            <a href="#devOps">DevOps Jobs</a>
+        </div>
+
+        <div class="location">
+            <p class="popular">Popular Collections</p>
+            <a href="#meesho">Meesho Jobs</a>
+            <a href="#paytm">Paytm Jobs</a>
+            <a href="#vedantu">Vedantu Jobs</a>
+            <a href="#MX">MX Player Jobs</a>
+            <a href="#truemeds">Truemeds India Jobs</a>
+        </div>
+
+        <div class="location">
+            <p class="companies">Companies Hiring</p>
+            <a href="video">Video Editing Jobs</a>
+            <a href="#content">Content Writing Jobs</a>
+            <a href="#funded">Funded Startups Jobs</a>
+            <a href="#data">Data Science Jobs</a>
+            <a href="#IoT">Internet of Things (IoT) Jobs</a>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p class="text-footer">
+            Copyright &copy; Hiring Now. 2023 All Rights Reserved
+        </p>
+    </footer>
+</body>
+
+</html>
